@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Counting Down to Anjali's Special Day</title>
+<title>Counting Down to Aishu's Special Day</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 :root{
@@ -718,8 +718,8 @@ canvas{position:fixed;inset:0;z-index:2;pointer-events:none}
 <main id="countdownPage" class="page">
   <div class="hero">
     <div class="glass">
-      <span class="kicker">A special celebration awaits you at 12:00 AM on 11 August 2026 ✨</span>
-      <h1>Counting Down To Your Special Day <span class="accent">Anjali</span> <span class="tulip-icon" aria-label="tulip flower"></span></h1>
+      <span class="kicker">A special celebration awaits you on 15 August 2026 ✨</span>
+      <h1>Counting Down To Your Special Day <span class="accent">Aishu</span> <span class="tulip-icon" aria-label="tulip flower"></span></h1>
       <p class="lead">You mean more to me than words can ever explain ❤️</p>
 
       <div class="countdown" aria-label="Birthday countdown">
@@ -746,7 +746,7 @@ canvas{position:fixed;inset:0;z-index:2;pointer-events:none}
   <section class="celebration">
     <div class="party-top">
       <div class="message">
-        <h2>Happy Birthday <span class="accent">Anjali</span> <span class="tulip-icon" aria-label="tulip flower"></span></h2>
+        <h2>Happy Birthday <span class="accent">Aishu</span> <span class="tulip-icon" aria-label="tulip flower"></span></h2>
         <p>You are loved in tiny everyday ways, in loud celebration ways, and in the quiet spaces where words are never enough.</p>
       </div>
       <div class="cake-scene">
@@ -788,7 +788,7 @@ canvas{position:fixed;inset:0;z-index:2;pointer-events:none}
       <div class="bday-card" id="card">
         <div class="front">A Tiny Preview<br>Click To Open ✨</div>
         <div class="inside">
-          <h3>For Anjali ❤️</h3>
+          <h3>For Aishu ❤️</h3>
           <p>Click on my ponding heart, because some words deserve room to breathe.</p>
         </div>
       </div>
@@ -802,7 +802,7 @@ canvas{position:fixed;inset:0;z-index:2;pointer-events:none}
 <main id="heartPage" class="page heart-page hidden">
   <div class="heart-shell">
     <h2>Message From My Heart ❤️</h2>
-    <p class="lead">For Anjali, with tulips, wishes, and all the feelings I cannot fit into one sentence.</p>
+    <p class="lead">For Aishu, with tulips, wishes, and all the feelings I cannot fit into one sentence.</p>
     <div class="tulip-field" aria-hidden="true">
       <div class="tulip"><span class="stem"></span><span class="leaf left"></span><span class="leaf right"></span><span class="bloom"><span class="petal left"></span><span class="petal center"></span><span class="petal right"></span></span></div>
       <div class="tulip"><span class="stem"></span><span class="leaf left"></span><span class="leaf right"></span><span class="bloom"><span class="petal left"></span><span class="petal center"></span><span class="petal right"></span></span></div>
@@ -826,7 +826,7 @@ And even if I'm only someone you met through a screen, know that there's someone
 
 <main id="candlePage" class="page candle-page hidden">
   <div class="wish-panel">
-    <h2>Make A Wish, Anjali✨</h2>
+    <h2>Make A Wish, Aishu✨</h2>
     <p>Blow the candles and keep your wish close to your heart.</p>
     <div class="big-cake" id="bigCake" aria-label="Birthday cake with candles">
       <div class="candles">
@@ -872,7 +872,7 @@ And even if I'm only someone you met through a screen, know that there's someone
     <div class="gift-wrap">
       <button class="gift-box-button" id="unwrapGift">Unwrap Gift</button>
     </div>
-    <img class="gift-image" alt="A birthday gift for Anjali" src="image1.jpeg">
+    <img class="gift-image" alt="A birthday gift for Aishu" src="image1.jpeg">
     <p class="gift-note">A little surprise wrapped with love.</p>
     <button class="secondary" id="closeGift">Close Gift</button>
   </div>
@@ -962,7 +962,7 @@ saveWish.onclick=async()=>{
       headers:{'Content-Type':'application/json'},
       body:JSON.stringify({
         wish,
-        page:'Anjali birthday wishes',
+        page:'Aishu birthday wishes',
         sentAt:new Date().toISOString()
       })
     });
@@ -984,12 +984,12 @@ function showPage(page){
   window.scrollTo(0,0);
 }
 
-const target=new Date(2026,7,10,14,20,0);
+const target=new Date(2026,7,15,9,0,0);
 
 function update(){
   const diff=target-new Date();
   if(diff<=0){
-    document.querySelector('h1').innerHTML='It Is Your Birthday, <span class="accent">Anjali</span> <span class="tulip-icon" aria-label="tulip flower"></span>';
+    document.querySelector('h1').innerHTML='It Is Your Birthday, <span class="accent">Aishu</span> <span class="tulip-icon" aria-label="tulip flower"></span>';
     countdownMessage.textContent='The celebration is ready for you ❤️';
     d.textContent=h.textContent=m.textContent=s.textContent='00';
     enterSite.disabled=false;
